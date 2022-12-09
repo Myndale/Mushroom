@@ -109,8 +109,6 @@ void main()
 	old_handler = _dos_getvect(8);
 	_dos_setvect(8, timer_handler);
 
-	speaker = inp(SPEAKER_PORT) & 0xfc;
-
 	// enable interrupts to start playing
 	enable();
 
